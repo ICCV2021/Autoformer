@@ -1,8 +1,5 @@
 This is the implementation for ICCV submission **AutoFormer: Searching Transformers for Visual Recognition**.
 
-
-## Environment Setup
-
 To set up the enviroment you can easily run the following command:
 ```buildoutcfg
 git clone https://github.com/ICCV2021/Autoformer.git
@@ -44,6 +41,16 @@ AutoFormer-T | 5.7M | 74.9 | 92.6 | [Google Drive](https://drive.google.com/file
 AutoFormer-S | 22.9M | 81.7 | 95.8 | [Google Drive](https://drive.google.com/file/d/1ldgVpN0ESksgctybuu3pHmdBcs7lByLf/view?usp=sharing) 
 AutoFormer-B | 53.7M | 82.4 | 95.9 | [Google Drive](https://drive.google.com/file/d/1l2jiP3j9rc4O9rHi5RhyKk3l3X8pM-g6/view?usp=sharing)
 
+## Performance
+
+Top-1 accuracy on ImageNet. Our method achieves very competitive performance, being superior to the recent DeiT and ViT.
+
+<img alt="Performance" src=".figure/Performance.PNG" width="400"/>
+
+1000 random sampled good architectures in the supernet-S. The supernet trained under our strategy allows subnets to be well optimized.
+
+<img alt="Once for all" src=".figure/ofa.PNG" width="500"/>
+
 ## Quick Start
 We provide *test* code of AutoFormer as follows.
 
@@ -55,5 +62,6 @@ python -m torch.distributed.launch --nproc_per_node=8 --use_env supernet_train.p
 --change_qk --relative_position --mode retrain --dist-eval --cfg ./experiments/subnet/AutoFormer-B.yaml --resume /PATH/TO/CHECKPOINT --eval 
 ```
 
+### Train & Search
 
-
+We will release the training and search code upon acceptance of the paper.
