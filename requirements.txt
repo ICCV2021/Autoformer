@@ -6,3 +6,4 @@ easydict
 PyYAML
 pillow==6.1.0
 torchvision==0.2.1
+opencv-python
