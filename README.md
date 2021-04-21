@@ -46,8 +46,8 @@ AutoFormer-B | 53.7M | 82.4 | 95.9 | [Google Drive](https://drive.google.com/fil
 **Left:** Top-1 accuracy on ImageNet. Our method achieves very competitive performance, being superior to the recent DeiT and ViT. **Right:** 1000 random sampled good architectures in the supernet-S. The supernet trained under our strategy allows subnets to be well optimized.
 
 <div align="half">
-    <img src=".figure/performance.png" width="400"/>
-    <img src=".figure/ofa.png" width="400"/>
+    <img src=".figure/Performance.PNG" width="400"/>
+    <img src=".figure/ofa.PNG" width="400"/>
 </div>
 
 ## Quick Start
