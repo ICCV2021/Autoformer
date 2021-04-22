@@ -4,6 +4,7 @@ This is the implementation for ICCV submission **AutoFormer: Searching Transform
     <img src=".figure/overview.png" width="800"/>
 </div>
 
+## Environment Setup
 
 To set up the enviroment you can easily run the following command:
 ```buildoutcfg
