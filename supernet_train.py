@@ -317,7 +317,7 @@ def main(args):
     if not output_dir.exists():
         output_dir.mkdir(parents=True)
     # save config for later experiments
-    with open(str([output_dir / "config.yaml"]), 'w') as f:
+    with open(output_dir / "config.yaml", 'w') as f:
         f.write(args_text)
     if args.resume:
         if args.resume.startswith('https'):
